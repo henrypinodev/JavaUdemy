@@ -1,0 +1,54 @@
+[33mcommit 255a938848e3c99d088d5ea8df16c55652191d89[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Henry <henrypino93@gmail.com>
+Date:   Sun Jun 22 21:07:19 2025 -0400
+
+    clase math en java
+
+[33mcommit 2fa878854171cf00fe2187ca4278640ab2acb763[m[33m ([m[1;32mFeature/ClaseSystem[m[33m, [m[1;32mClaseMath[m[33m)[m
+Author: Henry <henrypino93@gmail.com>
+Date:   Wed Jun 18 23:59:50 2025 -0400
+
+    Configuración y uso de system
+
+[33mcommit 5f748e9ba214080abc102f668e1ab05437fbd15a[m[33m ([m[1;32mEjercicioCalcularEdad[m[33m)[m
+Author: Henry <henrypino93@gmail.com>
+Date:   Sun May 25 02:14:35 2025 -0400
+
+    ejercicioEdad
+
+[33mcommit cbe0921f0bb224c99809b492b17b3c682e96b700[m[33m ([m[1;32mFeature/DateCalendar[m[33m)[m
+Author: Henry <henrypino93@gmail.com>
+Date:   Sat May 24 01:09:03 2025 -0400
+
+    Paquete Calendar junto a clases de como aplicar Calendar y Date
+
+[33mcommit 482fb82fa74496555e2cafe325d8026fff647303[m[33m ([m[1;32mValorReferencia[m[33m)[m
+Author: Henry <henrypino93@gmail.com>
+Date:   Fri May 23 22:16:52 2025 -0400
+
+    Valor y Referencia en Java.
+
+[33mcommit 33c159193fb50d882f76552bb782115cfbdf691f[m
+Merge: 306d03f 5321c3d
+Author: Henry <henrypino93@gmail.com>
+Date:   Tue May 20 01:18:17 2025 -0400
+
+    conflicto merge resuelto
+
+[33mcommit 306d03fba5d421ad46e9916a0ba98c7ffc0a2852[m
+Author: Henry <henrypino93@gmail.com>
+Date:   Tue May 20 00:53:15 2025 -0400
+
+    clase wrapper
+
+[33mcommit 5321c3d12723402e0533474584d97cdafd6b8abc[m[33m ([m[1;32mClaseWrapper[m[33m)[m
+Author: Henry <henrypino93@gmail.com>
+Date:   Mon May 19 01:32:58 2025 -0400
+
+    clases wrapped
+
+[33mcommit 3f75495fe2ba0919e0e477b8a279458b1e9feaa0[m[33m ([m[1;31morigin/ClaseWrapper[m[33m)[m
+Author: Henry <henrypino93@gmail.com>
+Date:   Fri May 16 23:37:55 2025 -0400
+
+    ProyectoUdemyJava
