@@ -42,7 +42,7 @@ public class EjemploArregloNotasAlumnos {
         double promedioMatematicas =  ((double) sumNotasMatematicas /claseMatematicas.length);
         double promedioHistoria = ((double) sumNotasHistoria /claseHistoria.length);
         double promedioLenguaje = ((double) sumNotasLenguaje /claseLenguaje.length);
-        double promedioGeneral = (sumNotasMatematicas+sumNotasHistoria+sumNotasLenguaje/3);
+        double promedioGeneral = ((double) sumNotasMatematicas+(double) sumNotasHistoria+ (double) sumNotasLenguaje /3);
 
         System.out.println("Promedio de notas matematicas: "+ promedioMatematicas);
         System.out.println("Promedio de notas Historia: "+ promedioHistoria );
