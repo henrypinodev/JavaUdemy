@@ -12,7 +12,7 @@ public class EjemploMatricesStringFor {
         nombres[2][0] = "Lucas";
         nombres[2][1] = "Pancha";
         System.out.println("Iterando con matrices y For");
-        for (int i = 0; i < nombres.length; i++){
+        for(int i = 0; i < nombres.length; i++){
             for (int j = 0; j < nombres[i].length; j++){
                 System.out.print(nombres[i][j] + "\t");
 
