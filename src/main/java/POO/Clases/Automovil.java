@@ -30,13 +30,13 @@ public class Automovil {
     public static final String COLOR_GRIS = "Gris";
 
     // CONSTRUCTOR
-    public Automovil(){
+    public Automovil(String nissan, String navara, Color blanco, Motor motor){
         this.id = ++ ultimoId;
     }
 
 
     public Automovil(String fabricante, String modelo){
-        this();
+        this("nissan", "Navara", Color.BLANCO, new Motor(4.0, TipoMotor.BENCINA));
         this.fabricante = fabricante;
         this.modelo = modelo;
     }

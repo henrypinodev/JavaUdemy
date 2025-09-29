@@ -1,6 +1,6 @@
-/*package POO;
+package POO;
 
-import POO.Clases.Automovil;
+import POO.Clases.*;
 
 import java.util.Date;
 
@@ -10,35 +10,22 @@ public class EjemploAutomovil {
 
 
 
-        Automovil subaru = new Automovil("Subaru","Impreza" );
+        Automovil2 subaru = new Automovil2("Subaru","Impreza" );
 
+        Motor motor = new Motor(2.0, TipoMotor.BENCINA);
+        subaru.setMotor(motor);
+        subaru.setEstanque(new Estanque());
+        subaru.setColor(Color.ROJO);
 
-        subaru.setCilindrada(2.0);
-        subaru.setColor("Rojo");
-
-        Automovil mazda = new Automovil("Mazda", "Sport" );
-
-        mazda.setCilindrada(1.6);
-        mazda.setColor("Negro");
+        Automovil2 mazda = new Automovil2("Mazda", "Sport", Color.GRIS, new Motor(3.0, TipoMotor.DIESEL));
+        mazda.setEstanque(new Estanque(80));
 
         System.out.println(subaru.verDetalle());
         System.out.println(mazda.verDetalle());
 
-        System.out.println(subaru.acelerar(5000));
-        System.out.println(mazda.frenar());
 
-        System.out.println(mazda.acelerarFrenar(4000));
-
-        System.out.println("Kilometros por litro "+ subaru.calcularConsumo(300,0.6f));
-
-        System.out.println("Kilometros por litro "+ subaru.calcularConsumo(300,60));
-
-
-
-        Automovil nissan = new Automovil("nissan", "Navara", "Gris oscuro", 3.5,true,
-                50, true, 30, 3.5,50);
-        Automovil nissan2 = new Automovil("nissan", "Navara", "Gris oscuro", 3.5,true,
-                50, true, 30, 3.5,50);
+        Automovil2 nissan = new Automovil2("nissan", "Navara", Color.BLANCO, new Motor(4.0, TipoMotor.BENCINA), new Estanque(35));
+        Automovil2 nissan2 = new Automovil2("nissan", "Navara",Color.NARANJO, new Motor(2.0, TipoMotor.DIESEL),new Estanque(40));
 
         System.out.println(nissan.verDetalle());
 
@@ -59,4 +46,3 @@ public class EjemploAutomovil {
 
 
 }
-*/

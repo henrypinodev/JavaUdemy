@@ -1,11 +1,7 @@
-/* package POO;
+ package POO;
 
-import POO.Clases.Automovil;
-import POO.Clases.Color;
-import POO.Clases.TipoAutomovil;
+import POO.Clases.*;
 
-import javax.sql.XAConnection;
-import javax.transaction.xa.XAException;
 import java.util.Date;
 
 public class EjemploAutomovilStatic {
@@ -20,11 +16,11 @@ public class EjemploAutomovilStatic {
 
         subaru.setCilindrada(2.0);
 
-        Automovil nissan = new Automovil("Nissan", "Navara", Color.BLANCO, 2.0, false, 50, true, 500, 4.5, 70);
-        Automovil mazda = new Automovil("Mazda", "BT-50", Color.AZUL, 3.0);
+        Automovil2 nissan = new Automovil2("Nissan", "Navara", Color.BLANCO,new Motor(2.0, TipoMotor.BENCINA));
+        Automovil2 mazda = new Automovil2("Mazda", "BT-50", Color.AZUL,new Motor(1.5, TipoMotor.BENCINA) );
 
         // FIN úso de objetos inicializados con los constructores
-        Automovil subaru1 = new Automovil("Subaru","Impreza" );
+        Automovil2 subaru1 = new Automovil2("Subaru","Impreza" );
         subaru.setTipo(TipoAutomovil.HASHBACK);
         subaru.setColor(Color.GRIS);
         nissan.setTipo(TipoAutomovil.COUPE);
@@ -54,4 +50,3 @@ public class EjemploAutomovilStatic {
 
 
 }
-*/
