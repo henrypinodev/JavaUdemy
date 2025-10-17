@@ -1,6 +1,6 @@
 package POO.Clases;
 
-public class Automovil2 {
+public class Automovil2 implements Comparable <Automovil2> {
 
     private int id;
     private String fabricante;
@@ -10,6 +10,7 @@ public class Automovil2 {
     private Estanque estanque;
     private Persona conductor;
     private Rueda[] ruedas;
+    private int indiceRuedas;
     private TipoAutomovil tipo;
     private static int ultimoId;
 
@@ -17,6 +18,7 @@ public class Automovil2 {
     // CONSTRUCTORES
     public Automovil2() {
         this.id = ++ultimoId;
+        this.ruedas = new Rueda[5];
     }
 
     public Automovil2(String fabricante, String modelo) {
@@ -107,6 +109,13 @@ public class Automovil2 {
         return ruedas;
     }
 
+    public Automovil2 addRueda (Rueda rueda){
+        if (indiceRuedas < this.ruedas.length) {
+            this.ruedas[indiceRuedas++] = rueda;
+        }
+        return this;
+    }
+
     public void setRuedas(Rueda[] ruedas) {
         this.ruedas = ruedas;
     }
@@ -125,6 +134,8 @@ public class Automovil2 {
         return tipo;
     }
 
+
+
     public void setTipo(TipoAutomovil tipo) {
         this.tipo = tipo;
     }
@@ -137,12 +148,35 @@ public class Automovil2 {
         sb.append("\nauto.id " + this.id);
         sb.append("\nauto.fabricante: " + this.fabricante);
         sb.append("\nauto.modelo: " + this.modelo);
-        sb.append("\nauto.tipo = " + this.getTipo().getDescripcion());
+        if (this.tipo != null) {
+            sb.append("\nauto.tipo = " + this.getTipo().getDescripcion());
+        }
         sb.append("\nauto.color " + this.color);
-        sb.append("\nauto.cilindrada: " + this.motor.getCilindrada());
+        if (this.motor != null) {
+            sb.append("\nauto.cilindrada: " + this.motor.getCilindrada());
+        }
+        if (getConductor() != null){
+        sb.append("\nConductor Subaru: ").append(this.getConductor());
+        }
+
+        if (getRuedas() != null){
+            for(Rueda r: this.getRuedas()){
+                sb.append("\n"+ r.getFabricante()+", Aro: "+ r.getAro()+", Ancho: "+ r.getAncho());
+            }
+        }
 
         return sb.toString();
 
 
+    }
+
+    @Override
+    public String toString() {
+        return this.id +" "+ this.fabricante+" "+ this.modelo;
+    }
+
+    @Override
+    public int compareTo(Automovil2 a) {
+        return this.fabricante.compareTo(a.fabricante);
     }
 }
