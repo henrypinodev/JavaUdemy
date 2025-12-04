@@ -2,6 +2,19 @@ package POOHerencia;
 
 public class Profesor extends Persona {
 
+    public Profesor() {
+        System.out.println("Inicializando constructor profesor");
+    }
+
+    public Profesor(String nombre, String apellido, int edad) {
+        super(nombre, apellido, edad);
+    }
+
+    public Profesor(String nombre, String apellido, int edad, String asignatura) {
+        super(nombre, apellido, edad);
+        this.asignatura = asignatura;
+    }
+
     private String asignatura;
 
 

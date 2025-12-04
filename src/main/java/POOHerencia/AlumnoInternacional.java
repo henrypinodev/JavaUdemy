@@ -6,7 +6,18 @@ public class AlumnoInternacional extends Alumno {
     private double notasIdiomas;
 
 
+    public AlumnoInternacional() {
+        System.out.println("Inicializando constructor alumno internacional");
+    }
 
+    public AlumnoInternacional(String nombre, String apellido) {
+        super(nombre, apellido);
+    }
+
+    public AlumnoInternacional(String nombre, String apellido, int edad, String institucion, String pais) {
+        super(nombre, apellido, edad, institucion);
+        this.pais = pais;
+    }
 
     public String getPais() {
         return pais;
@@ -24,9 +35,5 @@ public class AlumnoInternacional extends Alumno {
         this.notasIdiomas = notasIdiomas;
     }
 
-    @Override
-    public String toString() {
-        return "Pais: "+pais+
-                "Notas idiomas: "+notasIdiomas;
-    }
+
 }
