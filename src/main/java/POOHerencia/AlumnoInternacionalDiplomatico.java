@@ -1,0 +1,7 @@
+package POOHerencia;
+
+public class AlumnoInternacionalDiplomatico extends Alumno {
+
+    //AQUI SE VERIFICO QUE AL SER FINAL ALUMNOINTERNACIONAL, NO PUEDE HEREDAR. POR LO TANTO
+    //DEBE HEREDAR DE UNA CON HERENCIA DISPONIBLE.
+}

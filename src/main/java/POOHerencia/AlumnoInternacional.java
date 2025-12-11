@@ -1,6 +1,6 @@
 package POOHerencia;
 
-public class AlumnoInternacional extends Alumno {
+public final class AlumnoInternacional extends Alumno {
 
     private String pais;
     private double notasIdiomas;
@@ -43,7 +43,7 @@ public class AlumnoInternacional extends Alumno {
 
     @Override
     public double calcularPromedio() {
-        System.out.println("Calcular promedio  : "+ AlumnoInternacional.class.getCanonicalName());
+        //System.out.println("Calcular promedio  : "+ AlumnoInternacional.class.getCanonicalName());
         return ((super.calcularPromedio()*3)+notasIdiomas)/4;
     }
 }
