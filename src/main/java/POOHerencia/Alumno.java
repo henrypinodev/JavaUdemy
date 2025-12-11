@@ -1,6 +1,6 @@
 package POOHerencia;
 
-public class Alumno extends Persona{
+public class Alumno extends Persona {
 
     private String institucion;
     private double notaMatematica, notaCastellano, notaHistoria;
@@ -12,6 +12,7 @@ public class Alumno extends Persona{
     public Alumno(String nombre, String apellido, int edad) {
         super(nombre, apellido, edad);
     }
+
     public Alumno(String nombre, String apellido) {
         super(nombre, apellido);
     }
@@ -28,8 +29,6 @@ public class Alumno extends Persona{
         this.notaHistoria = notaHistoria;
         this.notaMatematica = notaMatematica;
     }
-
-
 
 
     public String getInstitucion() {
@@ -64,21 +63,19 @@ public class Alumno extends Persona{
         this.notaHistoria = notaHistoria;
     }
 
-    public String saludar(){
+    public String saludar() {
         String saludar = super.saludar();
-        return  saludar+ "soy Alumno"+ getNombre();
+        return saludar + "soy Alumno" + getNombre();
     }
 
-    public double calcularPromedio(){
-        System.out.println("Calcular promedio (metodo sobre escrito invocado): "+ Alumno.class.getCanonicalName());
-        return (notaMatematica+ notaHistoria + notaCastellano)/3;
+    public double calcularPromedio() {
+        //System.out.println("Calcular promedio (metodo sobre escrito invocado): " + Alumno.class.getCanonicalName());
+        return (notaMatematica + notaHistoria + notaCastellano) / 3;
     }
 
     @Override
     public String toString() {
-        return "institucion='" + institucion + '\'' +
-                ", notaMatematica=" + notaMatematica +
-                ", notaCastellano=" + notaCastellano +
-                ", notaHistoria=" + notaHistoria;
+        return super.toString() + "\tInstitución: " + institucion + "\tnota matematica: " + notaMatematica + "\tnota historia: " + notaHistoria + "\tnota castellano: " + notaCastellano +
+                "\tPromedio: " + this.calcularPromedio();
     }
 }
