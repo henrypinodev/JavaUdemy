@@ -16,5 +16,5 @@ public class Cliente extends Persona {
     public void setBoleta(int boleta) {
         this.boleta = boleta;
     }
-    
+
 }
