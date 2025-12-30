@@ -1,15 +1,23 @@
 package POOAbstractas.Ejercicio;
 
 import POOAbstractas.Ejercicio.Mamifero.Canino.Lobo;
+import POOAbstractas.Ejercicio.Mamifero.Felino.Tigre;
 import POOAbstractas.Ejercicio.Mamifero.Mamifero;
 
 public class EjemploMamifero {
 
     public static void main(String[] args) {
 
+        Mamifero[] mamiferos = new Mamifero[6];
 
         Mamifero lobo = new Lobo("archipielago",49.2f,10.4f,23.4f,"CanudusLobo",4.0f,"Gris",20,"Especie salvaje");
-        System.out.println(lobo.comer());
+        Mamifero tigre = new Tigre("Selva",30.1f,1.16f, 80.6f,"TigresusAnimales",80,6.0f,"Especie tigre");
+        mamiferos[0] = lobo;
+        mamiferos[1] = tigre;
+
+        for (Mamifero animal : mamiferos ){
+            System.out.println(animal.comer());
+        }
 
 
     }
