@@ -1,9 +1,15 @@
 package POOAbstractas.Ejercicio;
 
+import POOAbstractas.Ejercicio.Mamifero.Canino.Lobo;
+import POOAbstractas.Ejercicio.Mamifero.Mamifero;
+
 public class EjemploMamifero {
 
     public static void main(String[] args) {
 
+
+        Mamifero lobo = new Lobo("archipielago",49.2f,10.4f,23.4f,"CanudusLobo",4.0f,"Gris",20,"Especie salvaje");
+        System.out.println(lobo.comer());
 
 
     }

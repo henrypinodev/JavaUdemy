@@ -5,23 +5,32 @@ public class Perro extends Canino {
 
     private Integer fuerzaMordida;
 
+    public Perro(String habitat, Float altura, Float largo, Float peso, String nombreCientifico, Float tamanoColmillos, String color, Integer fuerzaMordida) {
+        super(habitat, altura, largo, peso, nombreCientifico, tamanoColmillos, color);
+        this.fuerzaMordida = fuerzaMordida;
+    }
+
+    public Integer getFuerzaMordida() {
+        return fuerzaMordida;
+    }
+
     @Override
     public String comer() {
-        return "";
+        return "el perro va a comer y tiene un color de: "+getColor();
     }
 
     @Override
     public String dormir() {
-        return "";
+        return "el perro duerme en su habitat de: "+this.habitat;
     }
 
     @Override
     public String correr() {
-        return "";
+        return "el perro corre a una velocidad y un peso de"+getPeso();
     }
 
     @Override
     public String comunicarse() {
-        return "";
+        return "el perro "+ getClass().getName()+"y una fuerza de mordida de: "+getFuerzaMordida();
     }
 }
