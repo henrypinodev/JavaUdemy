@@ -16,6 +16,29 @@ public abstract class Mamifero {
         this.nombreCientifico = nombreCientifico;
     }
 
+    public Mamifero() {
+    }
+
+    public String getHabitat() {
+        return habitat;
+    }
+
+    public Float getAltura() {
+        return altura;
+    }
+
+    public Float getLargo() {
+        return largo;
+    }
+
+    public Float getPeso() {
+        return peso;
+    }
+
+    public String getNombreCientifico() {
+        return nombreCientifico;
+    }
+
     public abstract String comer();
     public abstract String dormir();
     public abstract String correr();
