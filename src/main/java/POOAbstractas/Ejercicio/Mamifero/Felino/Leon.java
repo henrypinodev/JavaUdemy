@@ -22,21 +22,21 @@ public class Leon extends Felino{
 
     @Override
     public String comer() {
-        return "El leon: "+this.nombreCientifico  +" está comiendo junto a su manada de: "+this.numManada;
+        return "El leon: "+nombreCientifico  +" está comiendo junto a su manada de: "+numManada;
     }
 
     @Override
     public String dormir() {
-        return "El leon fue a dormir en la noche con su manada de: "+this.numManada;
+        return "El leon fue a dormir en la noche con su manada de: "+numManada;
     }
 
     @Override
     public String correr() {
-        return "El leon esta corriendo a una velocidad de: "+this.velocidad;
+        return "El leon esta corriendo a una velocidad de: "+velocidad;
     }
 
     @Override
     public String comunicarse() {
-        return "El "+this.nombreCientifico+" comienza a comunicarse junto con potencial de decibel de: "+this.potenciaRugidoDecibel;
+        return "El "+nombreCientifico+" comienza a comunicarse junto con potencial de decibel de: "+potenciaRugidoDecibel;
     }
 }

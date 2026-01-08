@@ -16,21 +16,21 @@ public class Perro extends Canino {
 
     @Override
     public String comer() {
-        return "el perro va a comer y tiene un color de: "+getColor();
+        return "el perro va a comer y tiene un color de: "+color;
     }
 
     @Override
     public String dormir() {
-        return "el perro duerme en su habitat de: "+this.habitat;
+        return "el perro duerme en su habitat de: "+habitat;
     }
 
     @Override
     public String correr() {
-        return "el perro corre a una velocidad y un peso de"+getPeso();
+        return "el perro corre a una velocidad y un peso de"+peso;
     }
 
     @Override
     public String comunicarse() {
-        return "el perro "+ getClass().getName()+"y una fuerza de mordida de: "+getFuerzaMordida();
+        return "el perro y una fuerza de mordida de: "+fuerzaMordida;
     }
 }
