@@ -21,21 +21,21 @@ public class Lobo extends Canino{
 
     @Override
     public String comer() {
-        return "El lobo come con su especie: "+this.especieLobo+"y tienen un color a: "+getColor();
+        return "El lobo come con su especie: "+especieLobo+"y tienen un color a: "+color;
     }
 
     @Override
     public String dormir() {
-        return "El lobo se va a dormir junto a su manada: "+getEspecieLobo();
+        return "El lobo se va a dormir junto a su manada: "+especieLobo;
     }
 
     @Override
     public String correr() {
-        return "El lobo corre y tiene un largo de: "+getLargo();
+        return "El lobo corre y tiene un largo de: "+largo;
     }
 
     @Override
     public String comunicarse() {
-        return "El lobo se comunica con su manada de: "+getNumCamada();
+        return "El lobo se comunica con su manada de: "+numCamada;
     }
 }

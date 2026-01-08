@@ -1,27 +1,86 @@
 package POOAbstractas.Ejercicio;
 
+import POOAbstractas.Ejercicio.Mamifero.Canino.Canino;
 import POOAbstractas.Ejercicio.Mamifero.Canino.Lobo;
+import POOAbstractas.Ejercicio.Mamifero.Canino.Perro;
+import POOAbstractas.Ejercicio.Mamifero.Felino.Felino;
+import POOAbstractas.Ejercicio.Mamifero.Felino.Guepardo;
+import POOAbstractas.Ejercicio.Mamifero.Felino.Leon;
 import POOAbstractas.Ejercicio.Mamifero.Felino.Tigre;
 import POOAbstractas.Ejercicio.Mamifero.Mamifero;
+
+
 
 public class EjemploMamifero {
 
     public static void main(String[] args) {
 
-        Mamifero[] mamiferos = new Mamifero[6];
+        Mamifero[] mamiferos = new Mamifero[5];
 
         Mamifero lobo = new Lobo("archipielago",49.2f,10.4f,23.4f,"CanudusLobo",4.0f,"Gris",20,"Especie salvaje");
         Mamifero tigre = new Tigre("Selva",30.1f,1.16f, 80.6f,"TigresusAnimales",80,6.0f,"Especie tigre");
+        Mamifero perro = new Perro("ciudad", 2.5f, 23.6f,45.6f, "canidus", 92.9f, "Blanco",23);
+        Mamifero leon = new Leon("Bengala", 7.9f, 72.3f, 23.3f, "tigrebangeliña", 270,220.3f,12,510.3f);
+        Mamifero guepardo = new Guepardo("desierto",1.60f,2.6f,35.3f,"Guerpardiño",60,654.4f);
         mamiferos[0] = lobo;
         mamiferos[1] = tigre;
+        mamiferos[2] = perro;
+        mamiferos[3] = leon;
+        mamiferos[4] = guepardo;
 
-        for (Mamifero animal : mamiferos ){
-            System.out.println(animal.comer());
+
+
+
+        for (Mamifero animal : mamiferos ) {
+            if (animal != null) {
+
+                System.out.println(animal.getClass().getSimpleName());
+                System.out.println(animal.getHabitat());
+                System.out.println(animal.getPeso());
+                System.out.println(animal.getLargo());
+                System.out.println(animal.getNombreCientifico());
+
+                if (animal instanceof Canino) {
+                    System.out.println("Color: "+ ((Canino) animal).getColor());
+                    System.out.println("Tamaño colmillos: "+ ((Canino) animal).getTamanoColmillos());
+
+                    if (animal instanceof Lobo){
+                        System.out.println("Especie lobo: "+ ((Lobo) animal).getEspecieLobo());
+                        System.out.println("Numero de camada: "+ ((Lobo) animal).getNumCamada());
+                    }
+                    if (animal instanceof Perro){
+                        System.out.println("Fuerza de mordida: "+ ((Perro) animal).getFuerzaMordida());
+                    }
+                    System.out.println("SALIENDO DE CANINO");
+
+                }
+                if (animal instanceof Felino) {
+                    System.out.println("Tamaño colmillos Felinos: "+((Felino) animal).getTamanoColmillos());
+                    System.out.println("Velocidad Felinos: "+ ((Felino) animal).getVelocidad());
+
+                    if (animal instanceof Tigre){
+                        System.out.println("Especie tigre: "+ ((Tigre) animal).getEspecieTigre());
+
+                    }
+                    if (animal instanceof Leon){
+                        System.out.println("Numero de manada: "+ ((Leon) animal).getNumManada());
+                        System.out.println("Potencia de rugido"+ ((Leon) animal).getPotenciaRugidoDecibel());
+                    }
+                }
+                System.out.println("------METODOS --------");
+                System.out.println(animal.correr());
+                System.out.println(animal.dormir());
+                System.out.println(animal.comer());
+                System.out.println(animal.comunicarse());
+
+
+            }
         }
 
+        }
 
     }
-}
+
 
 
 /*

@@ -15,21 +15,21 @@ public class Tigre extends Felino {
 
     @Override
     public String comer() {
-        return "El"+this.nombreCientifico+"es una especie de tigre: "+this.especieTigre+" que gusta de comer con sus"+ getHabitat().toLowerCase();
+        return "El"+nombreCientifico+"es una especie de tigre: "+especieTigre+" que gusta de comer con sus"+ habitat;
     }
 
     @Override
     public String dormir() {
-        return "el: "+this.especieTigre+" va a dormir en su habitat de:"+getHabitat();
+        return "el: "+ especieTigre+" va a dormir en su habitat de:"+habitat;
     }
 
     @Override
     public String correr() {
-        return "El: "+this.especieTigre+"comenzará a correr a una velocidad de:"+getVelocidad();
+        return "El: "+especieTigre+"comenzará a correr a una velocidad de:"+ velocidad;
     }
 
     @Override
     public String comunicarse() {
-        return "El:"+this.especieTigre+"tiene una altura de"+getAltura()+ "con un habvitat de: "+ getHabitat().toLowerCase();
+        return "El:"+especieTigre+"tiene una altura de"+ altura + "con un habvitat de: "+ habitat;
     }
 }

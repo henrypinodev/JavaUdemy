@@ -16,9 +16,6 @@ public abstract class Mamifero {
         this.nombreCientifico = nombreCientifico;
     }
 
-    public Mamifero() {
-    }
-
     public String getHabitat() {
         return habitat;
     }
