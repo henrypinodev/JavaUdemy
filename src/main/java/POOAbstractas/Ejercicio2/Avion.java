@@ -2,7 +2,7 @@ package POOAbstractas.Ejercicio2;
 
 public class Avion extends VehiculoAereo{
 
-    protected int numeroMotores;
+    private int numeroMotores;
 
     public Avion(String marca, String modelo, int velocidadMax, int capacidadPasajeros, int altitudMaxima ,int numeroMotores) {
         super(marca, modelo, velocidadMax, capacidadPasajeros, altitudMaxima);
