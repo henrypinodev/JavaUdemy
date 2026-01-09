@@ -26,7 +26,7 @@ public class Ejercicio2 {
                 System.out.println("N° Ruedas: "+((VehiculoTerrestre) veh).getRuedas());
 
                 if (veh instanceof Auto) {
-                    System.out.println("Tipo de cambio: " +((Auto) veh).automatico+ " de "+veh.getClass().getSimpleName());
+                    System.out.println("Tipo de cambio: " +((Auto) veh).isAutomatico()+ " de "+veh.getClass().getSimpleName());
                 }
                 if (veh instanceof Moto) {
                     System.out.println(((Moto) veh).getCilindrada());
@@ -37,7 +37,7 @@ public class Ejercicio2 {
                 System.out.println("Altitud: "+((VehiculoAereo) veh).getAltitudMaxima()+"de: "+ veh.getClass().getSimpleName());
 
                 if (veh instanceof Avion) {
-                    System.out.println("N° de motores: "+((Avion) veh).numeroMotores+ "de: "+ veh.getClass().getSimpleName());
+                    System.out.println("N° de motores: "+((Avion) veh).getNumeroMotores()+ "de: "+ veh.getClass().getSimpleName());
                 }
             }
 
