@@ -1,11 +1,12 @@
 package POOInterfaces.modelo;
 
-public class Informe extends Hoja{
+public class Informe extends Hoja implements Imprimible{
 
-    private String autor, revisor;
+    private Persona autor;
+    private String revisor;
 
 
-    public Informe(String contenido, String autor, String revisor) {
+    public Informe(String contenido, Persona autor, String revisor) {
         super(contenido);
         this.autor = autor;
         this.revisor = revisor;
