@@ -1,42 +1,46 @@
 package POOInterfaces.Ejercicio1;
+import java.time.LocalDate;
 
-import java.util.Date;
 
 public class Libro extends Producto implements ILibro {
 
-    private Date fechaPublicacion;
+    private LocalDate fechaPublicacion;
     private String autor;
     private String titulo;
     private String editorial;
 
-    public Libro(int precio) {
+    public Libro(int precio, LocalDate fechaPublicacion, String autor, String titulo, String editorial) {
         super(precio);
+        this.fechaPublicacion = fechaPublicacion;
+        this.autor = autor;
+        this.titulo = titulo;
+        this.editorial = editorial;
     }
 
 
 
     @Override
     public double getPrecioVenta() {
-        return 0;
+        return getPrecio() * 0.95;
     }
 
     @Override
-    public Date getFechaPublicacion() {
-        return null;
+    public LocalDate getFechaPublicacion() {
+        return fechaPublicacion;
     }
 
     @Override
     public String getAutor() {
-        return "";
+        return autor;
     }
 
     @Override
     public String getTitulo() {
-        return "";
+        return titulo;
     }
 
     @Override
     public String getEditorial() {
-        return "";
+        return editorial;
     }
 }

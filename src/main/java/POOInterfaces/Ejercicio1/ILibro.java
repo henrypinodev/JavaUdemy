@@ -1,10 +1,11 @@
 package POOInterfaces.Ejercicio1;
 
-import java.util.Date;
+import java.time.LocalDate;
+
 
 public interface ILibro {
 
-    public Date getFechaPublicacion();
+    public LocalDate getFechaPublicacion();
     public String getAutor();
     public String getTitulo();
     public String getEditorial();

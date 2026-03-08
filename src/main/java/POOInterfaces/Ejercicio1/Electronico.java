@@ -13,4 +13,7 @@ public abstract class Electronico extends Producto implements IElectronico {
     public String getFabricante() {
         return fabricante;
     }
+
+
+
 }
