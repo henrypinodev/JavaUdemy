@@ -4,7 +4,7 @@ public class TvLCD extends Electronico {
 
     private int pulgada;
 
-    public TvLCD(int precio, String fabricante) {
+    public TvLCD(int precio, String fabricante, int pulgada) {
         super(precio, fabricante);
         this.pulgada = pulgada;
     }
@@ -15,6 +15,6 @@ public class TvLCD extends Electronico {
 
     @Override
     public double getPrecioVenta() {
-        return 0;
+        return getPrecio()*0.90;
     }
 }
