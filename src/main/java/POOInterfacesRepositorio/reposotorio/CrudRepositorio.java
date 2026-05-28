@@ -4,11 +4,11 @@ import POOInterfacesRepositorio.modelo.Cliente;
 
 import java.util.List;
 
-public interface CrudRepositorio {
+public interface CrudRepositorio<T> {
 
-    List<Cliente> listar();
-    Cliente porId(Integer id);
-    void insertar(Cliente cliente);
-    void editar(Cliente cliente);
+    List<T> listar();
+    T porId(Integer id);
+    void insertar(T t);
+    void editar(T t);
     void eliminar(Integer id);
 }

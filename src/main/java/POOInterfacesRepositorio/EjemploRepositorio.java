@@ -9,7 +9,7 @@ public class EjemploRepositorio {
     public static void main(String[] args) {
 
 
-        CrudRepositorio repo = new ClienteListRepositorio();
+        OrdenablePaginableCrudRepositorio<Cliente> repo = new ClienteListRepositorio();
 
         repo.insertar(new Cliente("Jose","martinez"));
         repo.insertar(new Cliente("Esteban", "Gonzalez"));
@@ -29,7 +29,7 @@ public class EjemploRepositorio {
 
         System.out.println("-----ORDENAR-------");
 
-        List<Cliente> clientesOrdenAsc = ((OrdenableRepositorio)repo).listar("nombre", Direccion.ASC);
+        List<Cliente> clientesOrdenAsc = ((OrdenablePaginableCrudRepositorio)repo).listar("nombre", Direccion.ASC);
 
         System.out.println("ORDEN ASC");
         for (Cliente c: clientesOrdenAsc){
