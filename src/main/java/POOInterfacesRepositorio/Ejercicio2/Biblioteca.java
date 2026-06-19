@@ -13,6 +13,10 @@ public class Biblioteca <T> {
         this.elementos = new ArrayList<>();
     }
 
+    public Biblioteca(List<T> elementos) {
+        this.elementos = elementos;
+    }
+
     public List<T> getElemento() {
         return elementos;
     }
