@@ -23,11 +23,19 @@ public class Inventario<T extends Producto > {
         productos.add(producto);
     }
 
-    public void obtenerDatos(){
-        for (T x : productos){
-            System.out.println("nombre: "+x.getNombre());
-            System.out.println("precio: "+x.getPrecio());
+    public void obtenerDatos() {
+        if (productos.isEmpty()) {
+            throw new IllegalStateException("No hay productos.");
         }
+        productos.forEach(producto -> {
+            System.out.println("Nombre: " + producto.getNombre());
+            System.out.println("Precio: " + producto.getPrecio());
+        });
+    }
+
+    public int cantidadProductos(){
+
+        return getProductos().size();
     }
 
 

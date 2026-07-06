@@ -1,7 +1,7 @@
 package POOInterfacesRepositorio.Ejercicio4;
 
 public class EjemploInventario {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         Inventario<Producto> p = new Inventario<>();
         p.agregar(new Producto("Omo", 6500));
@@ -11,6 +11,8 @@ public class EjemploInventario {
         p.agregar(new Producto("BUBBLE TEA", 2500));
 
         p.obtenerDatos();
+
+        p.cantidadProductos();
 
 
     }
