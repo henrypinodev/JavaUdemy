@@ -2,13 +2,15 @@ package POOInterfacesRepositorio.reposotorio;
 
 import POOInterfacesRepositorio.modelo.Cliente;
 import POOInterfacesRepositorio.modelo.Producto;
+import POOInterfacesRepositorio.reposotorio.excepciones.AccesoDatoException;
+import POOInterfacesRepositorio.reposotorio.excepciones.LecturaAccesoDatoException;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ProductoListRepositorio extends  AbstractListRepositorio<Producto> {
     @Override
-    public void editar(Producto producto) {
+    public void editar(Producto producto) throws LecturaAccesoDatoException {
         Producto p = porId(producto.getId());
         p.setDescripcion(producto.getDescripcion());
         p.setPrecio(producto.getPrecio());

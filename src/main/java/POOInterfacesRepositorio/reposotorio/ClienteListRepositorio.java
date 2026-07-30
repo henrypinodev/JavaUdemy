@@ -2,6 +2,7 @@ package POOInterfacesRepositorio.reposotorio;
 
 
 import POOInterfacesRepositorio.modelo.Cliente;
+import POOInterfacesRepositorio.reposotorio.excepciones.LecturaAccesoDatoException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +17,7 @@ public class ClienteListRepositorio extends AbstractListRepositorio<Cliente> {
 
 
     @Override
-    public void editar(Cliente cliente) {
+    public void editar(Cliente cliente) throws LecturaAccesoDatoException {
         Cliente c = this.porId(cliente.getId());
         c.setNombre(cliente.getNombre());
         c.setApellido(cliente.getApellido());
