@@ -1,11 +1,9 @@
-package POOCollection.Set;
+package POOCollection.List;
 
 import POOCollection.Set.modelo.Alumno;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
-import java.util.Objects;
 
 public class EjemploArrayList {
     public static void main(String[] args) {
