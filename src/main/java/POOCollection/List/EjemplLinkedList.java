@@ -1,10 +1,9 @@
-package POOCollection.Set;
+package POOCollection.List;
 
 import POOCollection.Set.modelo.Alumno;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
+import java.util.ListIterator;
 
 public class EjemplLinkedList {
     public static void main(String[] args) {
@@ -33,7 +32,19 @@ public class EjemplLinkedList {
         System.out.println("Alumno.remove(): "+alumno.removeFirst());
         System.out.println("Alumno.remove(): "+alumno.removeLast());
 
+        ListIterator<Alumno> li = alumno.listIterator();
 
-        
+
+        System.out.println("----ListIterator hasNext-----");
+        while(li.hasNext()){
+            Alumno a = li.next();
+            System.out.println(a);
+        }
+
+        System.out.println("----List Iterator hasPrevious");
+        while(li.hasPrevious()){
+            Alumno a = li.previous();
+            System.out.println(a);
+        }
     }
 }

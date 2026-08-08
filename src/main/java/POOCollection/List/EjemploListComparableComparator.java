@@ -1,4 +1,4 @@
-package POOCollection.Set;
+package POOCollection.List;
 import POOCollection.Set.modelo.Alumno;
 
 import java.util.*;
